@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./img/—Pngtree—painted\ festive\ chinese\ new\ year_980567.jpg");
+  background-size: 100%;
+  font-family: "Pacifico", cursive;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./img/istockphoto-1072250644-170667a.jpg");
+  background-size: 20px;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 3px 4px 20px black;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin-left: 0 10px;
+  animation: turn-360 3s infinite linear;
+}
+
+.navbar-list {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-left: 100px;
+}
+
+a {
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  padding: 0 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+a:hover {
+  background-color: white;
+  color: rgb(199, 62, 62);
+  font-weight: bold;
+}
+
+.home-navbar {
+  background-color: white;
+  color: rgb(199, 62, 62);
+  font-weight: bold;
+  cursor: default;
+}
+
+span {
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: auto 0;
+  color: white;
+  font-size: 16px;
+  padding: 0 24px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+span:hover {
+  background-color: white;
+  color: rgb(199, 62, 62);
+  font-weight: bold;
+}
+
+.article {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.year-pic {
+  height: 250px;
+  margin-top: 70px;
+}
+
+.cat-pic {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.text-pic {
+  width: 350px;
+}
+
+.lucky-money-pic {
+  width: 200px;
+  position: absolute;
+  animation: shake 1s infinite;
+}
+
+.topleft {
+  top: 60px;
+  left: 0;
+}
+
+.topright {
+  top: 60px;
+  right: 0;
+}
+
+.chinese-lion-pic1 {
+  width: 250px;
+  position: absolute;
+  transform: scaleX(-1);
+  animation: leftToRight 2s ease-in-out;
+}
+
+.chinese-lion-pic2 {
+  width: 250px;
+  position: absolute;
+  animation: rightToLeft 2s ease-in-out;
+}
+
+.bottomleft {
+  bottom: 0;
+  left: 0;
+}
+
+.bottomright {
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    left: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes rightToLeft {
+  0% {
+    right: -100px;
+    opacity: 0;
+  }
+  100% {
+    right: 20px;
+    opacity: 1;
+  }
+}
+
+@keyframes turn-360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

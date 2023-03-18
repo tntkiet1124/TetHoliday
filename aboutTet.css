@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Pacifico", cursive;
+  background-image: url("./img/istockphoto-1072250644-170667a.jpg");
+  background-size: 10px;
+  overflow-x: hidden;
+}
+
+.navbar {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url("./img/istockphoto-1072250644-170667a.jpg");
+  background-size: 20px;
+  position: fixed;
+  z-index: 100;
+  box-shadow: 3px 4px 20px black;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin: 0 10px;
+  animation: turn-360 3s infinite linear;
+}
+
+.navbar-list {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-left: 100px;
+}
+
+a {
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+  padding: 0 24px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+a:hover {
+  background-color: white;
+  color: rgb(199, 62, 62);
+  font-weight: bold;
+}
+
+.about-tet-navbar {
+  background-color: white;
+  color: rgb(199, 62, 62);
+  font-weight: bold;
+  cursor: default;
+}
+
+span {
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: auto 0;
+  color: white;
+  font-size: 16px;
+  padding: 0 24px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+span:hover {
+  background-color: white;
+  color: rgb(199, 62, 62);
+  font-weight: bold;
+}
+
+
+.about  {
+  width: 70%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.tet-meaning,
+.lucky-money,
+.banh-chung-food,
+.banh-tet-food,
+.thit-kho-trung-food {
+  padding: 75px 25px 25px;
+  width: calc(100vw - 50%);
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(199, 62, 62);
+}
+
+p {
+  font-size: 20px;
+  color: black;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+  margin: 10px auto 0;
+}
+
+@keyframes turn-360 {
+  0% {
+      transform: rotate(0deg);
+  }100% {
+      transform: rotate(360deg);
+  }
+}
